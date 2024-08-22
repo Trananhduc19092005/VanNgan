@@ -2,6 +2,7 @@ html
 {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    transition: all .5s;
 }
 
 
@@ -55,31 +56,8 @@ div
     display : none;
 }
 
-.navbar-menu
-{
-        display : flex;
-        right : 0px;
-        display : none;
-}
-
-.navbar-menu a
-{
-        color : black;
-        text-decoration: none;
-        font-size: 20px;
-        line-height: 40px;
-}
-
-.navbar-menu ul
-{
-        color : black;
-        list-style: none;
-}
-
-
-
 a{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 a:hover
@@ -90,7 +68,9 @@ a:hover
     text-decoration: underline;
 }
 
-#icon
+
+
+.navbar-menu-list
 {
     display : none;
 }
@@ -188,35 +168,53 @@ a:hover
 @media screen and (max-width : 767px) 
 {
 
+
     .navbar-menu
     {
-        display: flex;
+        display: block;
+    }
+    
+    
+    #check
+    {
+        display: block;
+        position: absolute;
+        width: 30px;
+        display : none;
+    }
+    
+    #icon
+    {
+        margin-right: 20px;
     }
 
-    .navbar-menu-list
+    .navbar-menu-list 
     {
+        display : block;
+        list-style: none;
+        position: absolute;
+        width: 140px;
+        left : 420px;
+        top : 30px;
+        line-height: 30px;
+        background-color: wheat;
+        padding : 10px;
         display : none;
     }
 
-    #icon
+    .navbar-menu-list a
     {
-        display : block;
-        position: absolute;
-        right: 10px;
-        left : 560px;
-        bottom: 0px;
-        top : 70px;
+        color : black;
+        text-decoration: none;
+        font-size: 20px;
     }
 
-    #icon:hover >  .navbar-menu-list
+  
+
+    #check:checked ~ .navbar-menu-list
     {
         display : block;
-        position: absolute;
-        bottom : 20px;
-        right : 50px;
-        background-color: red;
     }
-
 
     .navbar-list-items
     {
@@ -255,10 +253,7 @@ a:hover
     background-repeat: no-repeat;
     }
 
-    .footer
-    {
-    background-color: red;
-    }
+    
 }
 
 
