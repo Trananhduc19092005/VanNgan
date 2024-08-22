@@ -1,0 +1,160 @@
+html
+{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div
+{
+    scroll-snap-align: center;
+}
+
+
+.container
+{
+    min-height: 100vh;
+}
+
+.container .header
+{
+    display : flex;
+    position: sticky;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top : 0px;
+    background-color: aliceblue;
+
+}
+
+.navbar-img
+{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 15px;
+}
+
+.navbar-list-items
+{
+    display : inline-block;
+    margin : 0 30px;
+    color : black;
+}
+
+a:hover
+{
+    font-size: 20px;
+    font-weight: bold;
+    color : black;
+    text-decoration: underline;
+}
+
+a:active
+{
+    text-decoration: underline;
+}
+
+
+
+.container .body
+{
+    height: 80vh;
+    background-image: url(./392940620_862415012431771_1135518327679566131_n.jpg);
+    background-size : cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-bottom
+{
+    margin-top : 50px;
+    margin-bottom: 50px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/274956278_426621802592443_5825783399719560334_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wf9K1uvFD38Q7kNvgH0EPwg&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=AHcVnAALdMDJHLmaciRmzQw&oh=00_AYByIFdbFkVBh2oYtbYu0K23yIvXpag_ctEa8BaCxrICfA&oe=66CC75CC);
+}
+
+.body-bottom .body-bottom-list
+{
+    display : flex;
+    background-color: white;
+}
+
+.body-bottom-list-items 
+{
+    text-align: center;
+    box-shadow: 5px 4px 3px 2px wheat;
+    padding : 50px;
+    margin : 20px;
+}
+
+.body-bottom-list-items h1
+{
+    margin : 10px;
+    background-color: #f0f0f0;
+}
+
+.body-bottom-list-items h2
+{
+    margin : 10px;
+}
+
+.body-bottom-list-items p
+{
+    margin : 5px
+}
+
+.body-bottom-list-items .in-dam
+{
+    font-weight: bold;
+}
+
+.container .body-thuc-don
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/274782711_427900295797927_3978360014539531211_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kN0ScIlYQagQ7kNvgFwxpsi&_nc_ht=scontent.fsgn5-12.fna&oh=00_AYBzZUUW_WvS2kapU1-syaHsWpYcJ35NmZfPFZUQG3KcGw&oe=66CCA93C);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container .body-thuc-don img
+{
+    height: 80vh;
+    width: 30%;
+    padding : 8px;
+}
+
+.container .footer
+{
+    display: flex;
+    align-items: center;
+    min-height: 5vh;
+    justify-content: center;
+}
+
+
+.footer
+{
+    background-color: #f0f0f0;
+    color : black;
+    font-weight: normal;
+}
+
+
+
