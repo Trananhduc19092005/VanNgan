@@ -34,6 +34,7 @@ div
     align-items: center;
     top : 0px;
     background-color: aliceblue;
+    text-transform: uppercase;
 }
 
 .navbar-img
@@ -85,45 +86,50 @@ a:hover
     align-items: center;
 }
 
-.body-bottom
-{
-    margin-top : 50px;
-    margin-bottom: 50px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/274956278_426621802592443_5825783399719560334_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wf9K1uvFD38Q7kNvgH0EPwg&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=AHcVnAALdMDJHLmaciRmzQw&oh=00_AYByIFdbFkVBh2oYtbYu0K23yIvXpag_ctEa8BaCxrICfA&oe=66CC75CC);
-}
 
-.body-bottom .body-bottom-list
+.body-bottom-list
 {
     display : flex;
-    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap : 30px;
+    background-image: url(https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/274956278_426621802592443_5825783399719560334_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wf9K1uvFD38Q7kNvgH0EPwg&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=AHcVnAALdMDJHLmaciRmzQw&oh=00_AYByIFdbFkVBh2oYtbYu0K23yIvXpag_ctEa8BaCxrICfA&oe=66CC75CC);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
 
 .body-bottom-list-items 
 {
+    display : block;
+    height: 26vh;
+    padding: 20px;
     text-align: center;
-    box-shadow: 5px 4px 3px 2px wheat;
-    padding : 50px;
-    margin : 20px;
+    max-width: 500px;
+    flex : 1;
+    background-color: white;
+    box-shadow:  0 0 50px black;
 }
 
 .body-bottom-list-items h1
 {
     margin : 10px;
     background-color: #f0f0f0;
+    text-transform: uppercase;
 }
 
 .body-bottom-list-items h2
 {
     margin : 10px;
+    text-transform: uppercase;
+
 }
 
 .body-bottom-list-items p
 {
-    margin : 5px
+    margin : 5px;
 }
 
 .body-bottom-list-items .in-dam
@@ -167,7 +173,10 @@ a:hover
 
 @media screen and (max-width : 767px) 
 {
-
+    .container .header
+    {
+      width: 100% max-content 767px;
+    }
 
     .navbar-menu
     {
@@ -180,6 +189,7 @@ a:hover
         display: block;
         position: absolute;
         width: 30px;
+        bottom : 0;
         display : none;
     }
     
@@ -192,12 +202,9 @@ a:hover
     {
         display : block;
         list-style: none;
-        position: absolute;
-        width: 140px;
-        left : 420px;
-        top : 30px;
+        position: relative;
         line-height: 30px;
-        background-color: wheat;
+        background-color: white;
         padding : 10px;
         display : none;
     }
@@ -227,6 +234,8 @@ a:hover
     .container .body
     {
     height: 50vh;
+    width: 100%;
+
     background-image: url(./392940620_862415012431771_1135518327679566131_n.jpg);
     background-size : cover;
     display: flex;
@@ -235,21 +244,34 @@ a:hover
     background-repeat: no-repeat;
     }
 
-    .body-bottom
+    .body-bottom-list
     {
-    height: 60vh;
-    display: flex;
+    display : flex;
     justify-content: center;
     align-items: center;
+    gap : 30px;
     background-image: url(https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/274956278_426621802592443_5825783399719560334_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wf9K1uvFD38Q7kNvgH0EPwg&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=AHcVnAALdMDJHLmaciRmzQw&oh=00_AYByIFdbFkVBh2oYtbYu0K23yIvXpag_ctEa8BaCxrICfA&oe=66CC75CC);
-    background-size: cover;
+    height: 100vh;
     background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .body-bottom-list-items 
+    {
+    display : block;
+    height: 26vh;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    max-width: 500px;
+    flex : 1;
+    overflow: scroll;
     }
 
     .container .body-thuc-don img
     {
     height: 50vh;
-    width: 60%;
+    width: 100%;
     background-repeat: no-repeat;
     }
 
