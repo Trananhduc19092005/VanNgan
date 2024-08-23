@@ -11,7 +11,7 @@ html
     margin : 0;
     padding : 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Poppins" , sans-serif
 }
 
 div
@@ -111,6 +111,7 @@ a:hover
     flex : 1;
     background-color: white;
     box-shadow:  0 0 50px black;
+    text-align: center;
 }
 
 .body-bottom-list-items h1
@@ -173,6 +174,7 @@ a:hover
 
 @media screen and (max-width : 767px) 
 {
+   
     .container .header
     {
       width: 100% max-content 767px;
@@ -213,7 +215,7 @@ a:hover
     {
         color : black;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 12px;
     }
 
   
@@ -233,9 +235,8 @@ a:hover
     
     .container .body
     {
-    height: 50vh;
+    height: 80vh;
     width: 100%;
-
     background-image: url(./392940620_862415012431771_1135518327679566131_n.jpg);
     background-size : cover;
     display: flex;
@@ -251,7 +252,7 @@ a:hover
     align-items: center;
     gap : 30px;
     background-image: url(https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/274956278_426621802592443_5825783399719560334_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wf9K1uvFD38Q7kNvgH0EPwg&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=AHcVnAALdMDJHLmaciRmzQw&oh=00_AYByIFdbFkVBh2oYtbYu0K23yIvXpag_ctEa8BaCxrICfA&oe=66CC75CC);
-    height: 100vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     }
@@ -261,19 +262,45 @@ a:hover
     display : block;
     height: 26vh;
     padding: 20px;
-    text-align: center;
     background-color: white;
     max-width: 500px;
     flex : 1;
-    overflow: scroll;
+    }
+
+    .body-bottom-list-items h1
+    {
+    margin : 10px;
+    background-color: #f0f0f0;
+    text-transform: uppercase;
+    font-size: 20px;
+    }
+
+    .body-bottom-list-items h2
+    {
+    margin : 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    }
+
+    .body-bottom-list-items p
+    {
+    margin : 5px;
+    font-size: 13px;
+    }
+
+    .body-bottom-list-items .in-dam
+    {
+    font-weight: bold;
     }
 
     .container .body-thuc-don img
     {
-    height: 50vh;
-    width: 100%;
+        height: 80vh;
+        width: 70%;
     background-repeat: no-repeat;
     }
+
+ 
 
     
 }
